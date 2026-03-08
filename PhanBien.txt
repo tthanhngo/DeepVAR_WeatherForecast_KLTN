@@ -1,0 +1,57 @@
+- Giải thích lý do tại sao giảm cột, tại sao lại chia được 80:20, phân tích bảng tương quan, gợi ý chọn biến được đưa vào mô hình , test thử giá trị alpha khác (thực nghiệm nếu chỉnh alpha thì dự báo có tốt hơn không), đưa ra tham số dạng bảng, đổi kết quả đánh giá qua %, đánh giá thử từng mô hình trên các TDL xem thử, bổ sung ý nghĩa của các công trình liên quan ứng dụng gì trong mô hình của mình, tìm thử một số công trình 2024, 2025 gần đây xem có gì mới không.
+- Ngày 12-13/01 gửi mail lại cho cô báo cáo, slide
+---------------------------
+[Update Phản biện]
+- Giải thích lý do tại sao lại giảm cột được từ 33 cột xuống còn 12 cột (dựa vào phân tích định tính-lý thuyết về thời tiết, sự phụ thuộc giữa các yếu tố và định lượng - biểu đồ tương quan). các công trình nghiên cứu về thời tiết khác có chọn những biến như em chọn khổng?
+- Cách sử dụng biểu đồ tương quan trong việc chọn biến cho mô hình học sâu như thế nào?
+- Dựa vào đâu mà chọn tỷ lệ chia tập dữ liệu 80:20 mà không phải là 70:30, dựa vào công thức nào, định lý nào?
+- Không thực hiện thực nghiệm điều chỉnh giá trị alpha của ADF test vì sao?
+- Từ tìm hiểu các công trình liên quan thì em ứng dụng được gì vào mô hình của mình?
+- Tổng hợp câu hỏi phản biện của Tuyền
+- Câu hỏi phản biện của thầy Sơn
+- Tham khảo câu hỏi phản biện của hội đồng kỳ trước
+
+---------------------------
+[Update streamlit]
+- Gợi ý người dùng chọn biến được đưa vào mô hình để dự báo được hiệu quả hơn (rê chuột vào icon bóng đèn thì hiện lên gợi ý) 
+- Đưa ra các tham số tối ưu dạng bảng
+- KHÔNG ĐỔI KẾT QUẢ ĐÁNH GIÁ CHỈ SỐ MSE,MAE THÀNH %
+
+
+--------------------------
+[Update Word] --> [Update PPT]
+- Bổ sung giải thích về cách chọn biến và sử dụng ma trận tương quan
+- Tổng hợp kết quả đánh giá theo từng mô hình xem thử với từng mô hình thì kết quả dự đoán tốt nhất trên TDL nào, phù hợp với dữ liệu của kiểu khí hậu nào (cô đề xuất thêm thực nghiệm)
+- Rãnh đọc tìm thêm 1,2 công trình gần đây nhất về dự báo chuỗi thời gian hoặc thời tiết, nào phù hợp thì đưa vô không thì thôi
+
+
+-----------------
+[MAIL KẾT QUẢ PHẢN BIỆN]
+Về Word, bổ sung:
+- Phần tổng hợp kết quả đánh giá theo từng mô hình, nhận xét mỗi mô hình cho kết quả dự đoán tốt nhất trên tập dữ liệu nào (chú thích tham khảo thêm, không đưa lên PPT)
+Về ứng dụng Streamlit, bổ sung:
+- Gợi ý cho người dùng chọn Target Columns để dự báo thời tiết hiệu quả
+- Đưa thông tin các tham số tối ưu dưới dạng bảng
+Về PowerPoint, bổ sung:
+- Hình vẽ kiến trúc mô hình
+- Rút gọn lý thuyết
+
+
+
+Ngoài ra, cô có đề xuất đổi kết quả đánh giá MSE, MAE, RMSE, CV(RMSE) thành dạng %, em có về xem lại thì nhận thấy đối với các biến thời tiết nếu đổi các chỉ số đánh giá thành % thì không có ý nghĩa vì các biến thời tiết có nhiều đơn vị đo khác nhau và không biểu diễn dưới dạng %, không giống như các chỉ số của kinh tế vĩ mô như GDP,.. thường được tính dưới dạng %.
+Lý do các chỉ số đánh giá MSE, MAE, RMSE, CV(RMSE) nhỏ như vậy là vì nhóm em sử dụng phương pháp chuẩn hóa dữ liệu min-max với min bằng 0 và max bằng 1 nên ở bảng kết quả so sánh đánh giá hiệu quả giữa các mô hình cô có thể thấy sự lệch không nhiều (đâu đó khoảng 0.001 đến 0.01) nhưng thực tế sự chênh lệch này có ý nghĩa rất lớn. Vì vậy, nhóm em xin phép giữ nguyên bảng chỉ số đánh giá và không đưa về dạng %.
+
+
+- Sửa VAR Lai DeepVAR thành Hybrid sequential VAR - DeepVAR
+- Slide chữ nhiều quá, Chỉ cần hình vẽ và giải thích thôi khoảng 20 slide là được --> nói ý chính kiến trúc mô hình sao sao thôi chứ giải thích cụ thể thì để thầy hăng lên thầy thầy hỏi
+
+
+
+
+
+
+
+
+
+
+
