@@ -20,7 +20,8 @@ Dữ liệu lịch sử thời tiết được lấy từ Visual Crossing Weathe
 Kích thước tập dữ liệu: 1462 dòng x 34 cột
 
 CÀI ĐẶT CÁC MÔ HÌNH
-1. Mô hình VAR: Xác định độ trễ (lag) tối ưu để làm thông số đầu vào cho quá trình xây dựng mô hình VAR-LSTM, DeepVAR và VAR Lai DeepVAR.
+1. Mô hình VAR:
+- Xác định độ trễ (lag) tối ưu để làm thông số đầu vào cho quá trình xây dựng mô hình VAR-LSTM, DeepVAR và VAR Lai DeepVAR.
 2. Mô hình VAR-LSTM
 - B1: Tạo dự đoán từ mô hình VAR
 - B2: Tìm độ trễ tốt nhất cho dự đoán từ VAR
