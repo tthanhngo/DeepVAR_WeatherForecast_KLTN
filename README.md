@@ -22,22 +22,22 @@ Kích thước tập dữ liệu: 1462 dòng x 34 cột
 CÀI ĐẶT CÁC MÔ HÌNH
 1. Mô hình VAR: Xác định độ trễ (lag) tối ưu để làm thông số đầu vào cho quá trình xây dựng mô hình VAR-LSTM, DeepVAR và VAR Lai DeepVAR.
 2. Mô hình VAR-LSTM
-B1: Tạo dự đoán từ mô hình VAR
-B2: Tìm độ trễ tốt nhất cho dự đoán từ VAR
-B3: Chuyển đổi dự đoán từ mô hình VAR thành các cửa sổ trượt và tách X-y
-B4: Tìm siêu tham số
-B5: Xây dựng và huấn luyện mô hình LSTM trên đầu vào dự báo từ VAR
+- B1: Tạo dự đoán từ mô hình VAR
+- B2: Tìm độ trễ tốt nhất cho dự đoán từ VAR
+- B3: Chuyển đổi dự đoán từ mô hình VAR thành các cửa sổ trượt và tách X-y
+- B4: Tìm siêu tham số
+- B5: Xây dựng và huấn luyện mô hình LSTM trên đầu vào dự báo từ VAR
 3. Mô hình DeepVAR
-B1: Tạo cửa sổ trượt từ đặc trưng trễ và tách X-y
-B2: Tìm siêu tham số
-B3: Xây dựng và huấn luyện mô hình LSTM
+- B1: Tạo cửa sổ trượt từ đặc trưng trễ và tách X-y
+- B2: Tìm siêu tham số
+- B3: Xây dựng và huấn luyện mô hình LSTM
 4. Mô hình VAR Lai DeepVAR
-B1: Tạo dự đoán từ mô hình VAR
-B2: Tính lỗi dự đoán của mô hình VAR
-B3: Chuyển đổi lỗi dự đoán từ mô hình VAR thành các cửa sổ trượt
-B4: Tìm siêu tham số
-B5: Xây dựng và huấn luyện mô hình LSTM trên đầu vào dự báo lỗi từ VAR
-Kết quả dự đoán cuối cùng là tổng hợp kết quả của dự đoán từ VAR và dự báo lỗi dự đoán từ DeepVAR
+- B1: Tạo dự đoán từ mô hình VAR
+- B2: Tính lỗi dự đoán của mô hình VAR
+- B3: Chuyển đổi lỗi dự đoán từ mô hình VAR thành các cửa sổ trượt
+- B4: Tìm siêu tham số
+- B5: Xây dựng và huấn luyện mô hình LSTM trên đầu vào dự báo lỗi từ VAR
+- Kết quả dự đoán cuối cùng là tổng hợp kết quả của dự đoán từ VAR và dự báo lỗi dự đoán từ DeepVAR
 
 KẾT QUẢ THỰC NGHIỆM
 - Đối với các TDL không dừng như Denmark, Tokyo, St John’s, cả bốn mô hình đều đạt độ chính xác dự báo cao hơn khi dữ liệu được dừng hóa. Qua đó, có thể thấy mặc dù các mô hình học sâu không yêu cầu dữ liệu phải dừng về mặt lý thuyết, việc dừng hóa dữ liệu vẫn mang lại lợi ích thực tiễn trong việc nâng cao độ chính xác và tính ổn định của dự báo.
