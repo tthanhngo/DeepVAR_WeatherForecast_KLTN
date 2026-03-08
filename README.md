@@ -12,6 +12,7 @@ Nội dung báo cáo:
 4.	Thực nghiệm và so sánh hiệu năng giữa các mô hình: VAR, VAR-LSTM, DeepVAR và VAR Lai DeepVAR
 
 DỮ LIỆU
+
 Dữ liệu lịch sử thời tiết được lấy từ Visual Crossing Weather – nhà cung cấp hàng đầu về dữ liệu thời tiết, trong vòng 4 năm từ 18/09/2021 tới 18/09/2025 tại 4 khu vực thành phố lớn với các kiểu khí hậu khác nhau:
 - Denmark – Khí hậu ôn đới hải dương
 - Hồ Chí Minh – Khí hậu nhiệt đới gió mùa
